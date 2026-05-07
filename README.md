@@ -4,6 +4,20 @@ This repository features an advanced framework for optimizing and validating Act
 
 The project was designed to automate telemetry analysis and suggest safety calibrations under the rigor of international functional safety and metrology standards.
 
+---
+
+## 📊 Project Outputs
+
+### Technical Dashboard
+![Dashboard Preview](docs/dashboard_preview.png)
+
+### Validation Report
+The framework automatically generates a professional HTML report for auditing purposes. 
+* **File**: `docs/validation_report.html`
+* **Purpose**: Detailed visualization of braking pressure corrections and stability metrics.
+
+---
+
 ## 🌟 Strategic Differentiators
 * **Regulatory Compliance**: Implementation based on **ISO 26262** (Functional Safety) and **ISO 17025** (Data Reliability).
 * **AI Reliability Score**: Integrated audit system that evaluates the safety and efficacy of AI suggestions before vehicle application.
@@ -21,7 +35,7 @@ This framework includes an **AI Audit Layer**:
 * **Safety Check**: Ensures compliance with functional safety boundaries.
 * **Reliability Metric**: A dynamic score (0-100) displayed on the dashboard to support Senior Engineer decision-making.
 
-## 📂 Project Structure
+## 📁 Project Structure
 ```text
 /
 ├── data/
@@ -29,10 +43,13 @@ This framework includes an **AI Audit Layer**:
 ├── src/
 │   └── auto_calib.py           # Core engine and AI logic
 ├── docs/
-│   └── validation_report.html  # Technical validation report
+│   ├── validation_report.html  # Technical validation report
+│   └── dashboard_preview.png   # Dashboard preview image
 └── README.md                   # Project documentation
 
 🚀 Usage
-Install dependencies: pip install pandas plotly
+Install dependencies:
+pip install pandas plotly
 
-Run the assistant: python src/auto_calib.py
+Run the assistant:
+python src/auto_calib.py

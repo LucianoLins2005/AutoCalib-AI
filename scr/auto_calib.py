@@ -4,6 +4,7 @@ from plotly.subplots import make_subplots
 import os
 
 # --- 1. PREPARAÇÃO E CÁLCULOS TÉCNICOS (Rigor ISO 17025) ---
+# O caminho deve ser relativo à raiz do projeto
 df = pd.read_csv('data/telemetry_data.csv')
 df['yaw_error'] = df['yaw_rate_actual'] - df['yaw_rate_target']
 kp_suggested = 1.65
